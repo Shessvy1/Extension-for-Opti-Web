@@ -1,0 +1,198 @@
+{
+    "plugin_type": "widget",
+    "name": "Three Card Responsive and Adaptive ",
+    "edit_page_url": "https://etail_fashiondemo.optimdemos.com/",
+    "form_schema": [
+      {
+        "default_value": "#heroBlock-175",
+        "name": "selector",
+        "label": "Placement SELECTOR",
+        "field_type": "selector",
+        "options": null
+      },
+      {
+        "default_value": "after",
+        "name": "insert",
+        "label": "Insert",
+        "field_type": "toggle",
+        "options": {
+          "choices": [
+            {
+              "value": "before",
+              "label": "Before"
+            },
+            {
+              "value": "after",
+              "label": "After"
+            }
+          ]
+        }
+      },
+      {
+        "default_value": "https://images1.cmp.optimizely.com/assets/DALL%C2%B7E+2024-03-06+22.37.51+-+A+vibrant+and+detailed+illustration+of+a+person+in+a+lab+coat+conducting+experiments+in+an+outdoor+setting%2C+surrounded+by+nature.+They+are+at+a+wooden.webp/Zz1iNjZiNDAxY2RjM2MxMWVlODgzNmNlOTkyMzIwMjc2OA==",
+        "name": "card1Image",
+        "label": "Card 1 Image",
+        "field_type": "text",
+        "options": null
+      },
+      {
+        "default_value": "We look deeper!",
+        "name": "card1Titel",
+        "label": "Card 1 Titel",
+        "field_type": "text",
+        "options": null
+      },
+      {
+        "default_value": "Description for Card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "name": "card1Descript",
+        "label": "Card 1 Description",
+        "field_type": "multi_text",
+        "options": null
+      },
+      {
+        "default_value": "#",
+        "name": "link1Url",
+        "label": "LInk 1 URL",
+        "field_type": "text",
+        "options": null
+      },
+      {
+        "default_value": "Click Here Now",
+        "name": "card1CTA",
+        "label": "Card 1 CTA",
+        "field_type": "text",
+        "options": null
+      },
+      {
+        "default_value": "rgba(204, 0, 51, 1)",
+        "name": "bgcolor",
+        "label": "CTA Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        }
+      },
+      {
+        "default_value": "rgba(255, 255, 255, 1)",
+        "name": "fontcolor",
+        "label": "Font Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        }
+      },
+      {
+        "default_value": "https://images1.cmp.optimizely.com/assets/DALL%C2%B7E+2024-03-06+22.38.11+-+An+imaginative+illustration+of+an+artist-s+studio+filled+with+canvases%2C+where+unconventional+methods+are+being+used+to+mix+and+apply+paint%2C+symbolizin.webp/Zz1iNjY0YWM3MGRjM2MxMWVlODk4MTBhZjZlZjU5YjMxYw==",
+        "name": "card2image",
+        "label": "Card 2 Image",
+        "field_type": "text",
+        "options": null
+      },
+      {
+        "default_value": "Its a colorful World",
+        "name": "card2Title",
+        "label": "Card 2 Title",
+        "field_type": "text",
+        "options": null
+      },
+      {
+        "default_value": "Description for Card 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "name": "card2Descript",
+        "label": "Card 2 Description ",
+        "field_type": "multi_text",
+        "options": null
+      },
+      {
+        "default_value": "#",
+        "name": "link2Url",
+        "label": "Link 2 URL",
+        "field_type": "text",
+        "options": null
+      },
+      {
+        "default_value": "Click Here Now",
+        "name": "card2CTA",
+        "label": "Card 2 CTA",
+        "field_type": "text",
+        "options": null
+      },
+      {
+        "default_value": "rgba(204, 0, 51, 1)",
+        "name": "bgcolor1",
+        "label": "CTA Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        }
+      },
+      {
+        "default_value": "rgba(255, 255, 255, 1)",
+        "name": "fontcolor1",
+        "label": "Font Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        }
+      },
+      {
+        "default_value": "https://images1.cmp.optimizely.com/assets/DALL%C2%B7E+2024-03-06+22.38.33+-+A+captivating+illustration+of+astronauts+on+an+alien+planet%2C+conducting+experiments+with+futuristic+tools+and+gadgets.+The+scene+is+set+against+an+exo.webp/Zz1iNzIxMTA5YWRjM2MxMWVlOTg0YzBhZjZlZjU5YjMxYw==",
+        "name": "card3Image",
+        "label": "Card 3 Image",
+        "field_type": "text",
+        "options": null
+      },
+      {
+        "default_value": "Mapping the World",
+        "name": "card3Titel",
+        "label": "Card 3 Titel",
+        "field_type": "text",
+        "options": null
+      },
+      {
+        "default_value": "Description for Card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "name": "card3Descript",
+        "label": "Card 3 Description",
+        "field_type": "multi_text",
+        "options": null
+      },
+      {
+        "default_value": "#",
+        "name": "link3Url",
+        "label": "LInk 3 URL",
+        "field_type": "text",
+        "options": null
+      },
+      {
+        "default_value": "Click Here Now",
+        "name": "card3CTA",
+        "label": "Card 3 CTA",
+        "field_type": "text",
+        "options": null
+      },
+      {
+        "default_value": "rgba(204, 0, 51, 1)",
+        "name": "bgcolor2",
+        "label": "CTA Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        }
+      },
+      {
+        "default_value": "rgba(255, 255, 255, 1)",
+        "name": "fontcolor2",
+        "label": "Font Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        }
+      }
+    ],
+    "description": "3 cards are responsive and adaptive, but it is open source so adjust as needed. ",
+    "options": {
+      "html": "<div id=\"optimizely-extension-{{ extension.$instance }}\" class=\"three-card-\">\n  \n<div class=\"body1\">\n<div class=\"card\" id=\"cardz1\">\n  <img src=\"{{extension.card1Image}}\" alt=\"Image Description\"><br>\n  <h3>{{extension.card1Titel}}</h3>\n  <p class=\"thisparg\">{{extension.card1Descript}}</p>\n  \n<a href=\"{{extension.link1Url}}\" style=\"background-color:{{extension.bgcolor}}; color:{{extension.fontcolor}};\">{{extension.card1CTA}}</a>\n\n  \n</div>\n\n<div class=\"card\" id=\"cardz2\">\n  <img src=\"{{extension.card2image}}\" alt=\"Image Description\"><br>\n  <h3>{{extension.card2Title}}</h3>\n  <p class=\"thisparg\">{{extension.card1Descript}}</p>\n  <a href=\"{{extension.link2Url}}\" style=\"background-color:{{extension.bgcolor1}}; color:{{extension.fontcolor1}};\">{{extension.card2CTA}}</a>\n</div>\n\n<div class=\"card\" id=\"cardz3\">\n  <img src=\"{{extension.card3Image}}\" alt=\"Image Description\"><br>\n  <h3>{{extension.card3Titel}}</h3>\n  <p class=\"thisparg\">{{extension.card3Descript}}</p>\n  <a href=\"your-link.html\">Read More</a>\n  <a href=\"{{extension.link3Url}}\" style=\"background-color:{{extension.bgcolor2}}; color:{{extension.fontcolor2}};\">{{extension.card3CTA}}</a>\n</div>\n  </div>",
+      "css": ".body1 {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  padding: 20px;\n  background-color: #f5f5f5;\n}\n\n.card {\n  width: 80%; /* Start with a high percentage for mobile devices */\n  max-width: 600px; /* Maximum width for larger screens */\n  background-color: white;\n  border: 1px solid #ddd;\n  border-radius: 5px;\n  overflow: hidden;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 15px;\n  box-shadow: 0 2px 5px rgba(0,0,0,0.1);\n  margin: 10px; \n}\n\n.card img {\n  width: 250px;\n  height: 250px;\n  transition: transform 0.3s ease; /* Smooth transition for the hover effect */\n}\n\n.card img:hover {\n  transform: scale(1.1); /* Slightly enlarge the images on hover */\n}\n\nh3, .card p, .card a {\n  width: 100%; /* Ensure elements don't overflow the card */\n  text-align: center; /* Center align the text for responsiveness */\n}\n\n.card a {\n  display: inline-block;\n  width: 88%;\n  margin-top: 10px;\n  padding: 10px 15px;\n  background-color: #007bff;\n  color: white;\n  text-decoration: none;\n  border-radius: 5px;\n  transition: background-color 0.3s;\n}\n\n.card a:hover {\n  background-color: #0056b3;\n}\n\n.thisparg {\nmargin-bottom: 95px; \n}\n\n/* Media Queries for Responsive Design */\n@media (min-width: 600px) {\n  .card {\n    width: calc(50% - 20px); /* Adjust width for tablets and above */\n  }\n}\n\n@media (min-width: 1024px) {\n  .card {\n    width: calc(33.333% - 20px); /* Adjust width for desktops and larger devices */\n  }\n}\n",
+      "apply_js": "/*\n * Editor now supports ES6 compliant code. Note that adding ES6\n * specific code to an experiment will break for users running\n * ES5-only browsers as code entered is not transpiled down to ES5.\n */\n\n  const utils = window.optimizely.get('utils');\n  const selector = extension.selector || 'body';\n\tconst insertType = extension.insert;\n\tconst html = extension.$html;\n\n\n  utils.waitForElement(selector).then(function(elem) {\n    // Prepend the extension html to the body\n    //elem.insertAdjacentHTML('afterbegin', extension.$html);\n    elem.insertAdjacentHTML(insertType === 'before' ? 'beforebegin' : 'afterend', html);\n\n    \n   \n  });\n\n",
+      "undo_js": "/*\n * Editor now supports ES6 compliant code. Note that adding ES6\n * specific code to an experiment will break for users running\n * ES5-only browsers as code entered is not transpiled down to ES5.\n */\n \n  const extensionElement = document.getElementById('optimizely-extension-' + extension.$instance);\n  if (extensionElement) {\n    extensionElement.parentElement.removeChild(extensionElement);\n  }\n"
+    }
+  }
