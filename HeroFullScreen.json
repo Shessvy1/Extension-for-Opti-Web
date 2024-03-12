@@ -1,0 +1,309 @@
+{
+    "plugin_type": "widget",
+    "name": "Full Screen Hero Image with Center CTA ",
+    "edit_page_url": "https://graphql_demo.optimdemos.com/",
+    "form_schema": [
+      {
+        "default_value": "#heroBlock-168",
+        "label": "selector",
+        "field_type": "selector",
+        "options": null,
+        "name": "selector"
+      },
+      {
+        "default_value": "before",
+        "label": "Insert",
+        "field_type": "toggle",
+        "options": {
+          "choices": [
+            {
+              "value": "before",
+              "label": "Before"
+            },
+            {
+              "value": "after",
+              "label": "After"
+            }
+          ]
+        },
+        "name": "insert"
+      },
+      {
+        "default_value": "How AI is helping us!",
+        "label": "Slide 1 Title",
+        "field_type": "text",
+        "options": null,
+        "name": "title1"
+      },
+      {
+        "default_value": "Description goes here  !",
+        "label": "Description Slide 1",
+        "field_type": "multi_text",
+        "options": null,
+        "name": "DescritSlide1"
+      },
+      {
+        "default_value": "https://images2.cmp.optimizely.com/Zz1jMjg0MjY1ODNjNzcxMWVlOGQzZjhlYTdlZTk5ZTk2ZA==",
+        "label": "Image1 URL",
+        "field_type": "text",
+        "options": null,
+        "name": "img1url"
+      },
+      {
+        "default_value": "Call to Action",
+        "label": "Slide 1 CTA Button",
+        "field_type": "text",
+        "options": null,
+        "name": "slide1CTA"
+      },
+      {
+        "default_value": "https://google.com",
+        "label": "Slide 1 CTA Link",
+        "field_type": "text",
+        "options": null,
+        "name": "Slide1CTAURL"
+      },
+      {
+        "default_value": "rgba(24, 30, 28, 1)",
+        "label": "CTA Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        },
+        "name": "bgcolor"
+      },
+      {
+        "default_value": "rgba(255, 255, 255, 1)",
+        "label": "Font Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        },
+        "name": "fontcolor"
+      },
+      {
+        "default_value": "The Digital Age will upon us! ",
+        "label": "Slide 2 Title",
+        "field_type": "text",
+        "options": null,
+        "name": "title2"
+      },
+      {
+        "default_value": "Description goes here  !",
+        "label": "Description Slide 2 ",
+        "field_type": "multi_text",
+        "options": null,
+        "name": "DescritSlide2"
+      },
+      {
+        "default_value": "https://images1.cmp.optimizely.com/Zz1jMjg1MWIwODNjNzcxMWVlYTRlODk2NWRlM2JjZDI2MA==",
+        "label": "Image 2 URL",
+        "field_type": "text",
+        "options": null,
+        "name": "image2Url"
+      },
+      {
+        "default_value": "Call to Action",
+        "label": "Slide 2 CTA",
+        "field_type": "text",
+        "options": null,
+        "name": "Slide2CTA"
+      },
+      {
+        "default_value": "https://www.example.com",
+        "label": "Slide 2 CTA URL",
+        "field_type": "text",
+        "options": null,
+        "name": "slide2CTAURL"
+      },
+      {
+        "default_value": "rgba(204, 0, 51, 1)",
+        "label": "CTA Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        },
+        "name": "bgcolor2"
+      },
+      {
+        "default_value": "rgba(255, 255, 255, 1)",
+        "label": "Font Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        },
+        "name": "fontcolor2"
+      },
+      {
+        "default_value": "Profession AI is coming!",
+        "label": "Slide 3 Title",
+        "field_type": "text",
+        "options": null,
+        "name": "title3"
+      },
+      {
+        "default_value": "Description for Slide 3",
+        "label": "Description for Slide 3",
+        "field_type": "multi_text",
+        "options": null,
+        "name": "DescritSlide3"
+      },
+      {
+        "default_value": "https://images2.cmp.optimizely.com/Zz1jMjkzY2VhMDNjNzcxMWVlYTM1OWU2YjVkYTM5MzJmNQ==",
+        "label": "Image 3 URL",
+        "field_type": "text",
+        "options": null,
+        "name": "image3URL"
+      },
+      {
+        "default_value": "Click to Find out More",
+        "label": "Slide 3 CTA",
+        "field_type": "text",
+        "options": null,
+        "name": "slide3CTA"
+      },
+      {
+        "default_value": "https://www.example.com",
+        "label": "Slide 3 CTA URL",
+        "field_type": "text",
+        "options": null,
+        "name": "slide3CTAURL"
+      },
+      {
+        "default_value": "rgba(78, 114, 212, 1)",
+        "label": "CTA Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        },
+        "name": "bgcolor3"
+      },
+      {
+        "default_value": "rgba(255, 255, 255, 1)",
+        "label": "Font Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        },
+        "name": "fontcolor3"
+      },
+      {
+        "default_value": "What is in our Near Future? ",
+        "label": "Slide 4 Title",
+        "field_type": "text",
+        "options": null,
+        "name": "title4"
+      },
+      {
+        "default_value": "Description for Image 4",
+        "label": "Description Slide 4 ",
+        "field_type": "multi_text",
+        "options": null,
+        "name": "DescritSlide4"
+      },
+      {
+        "default_value": "https://images3.cmp.optimizely.com/Zz1jMWYwMTRmNDNjNzcxMWVlYjdiN2JhMTY4NWI1MzkzNg==",
+        "label": "image 4 URL",
+        "field_type": "text",
+        "options": null,
+        "name": "image4URL"
+      },
+      {
+        "default_value": "Call to Action",
+        "label": "Slide 4 CTA",
+        "field_type": "text",
+        "options": null,
+        "name": "slide4CTA"
+      },
+      {
+        "default_value": "https://www.example.com",
+        "label": "Slide 4 CTA URL",
+        "field_type": "text",
+        "options": null,
+        "name": "slide4CTAURL"
+      },
+      {
+        "default_value": "rgba(226, 221, 79, 1)",
+        "label": "CTA Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        },
+        "name": "bgcolor4"
+      },
+      {
+        "default_value": "rgba(255, 255, 255, 1)",
+        "label": "Font Color",
+        "field_type": "color",
+        "options": {
+          "mode": "rgba"
+        },
+        "name": "fontcolor4"
+      },
+      {
+        "default_value": "7000",
+        "label": "Slide Delay Seconds ",
+        "field_type": "dropdown",
+        "options": {
+          "choices": [
+            {
+              "value": "4000",
+              "label": "4 Sec"
+            },
+            {
+              "value": "5000",
+              "label": "5 Sec"
+            },
+            {
+              "value": "6000",
+              "label": "6 Sec"
+            },
+            {
+              "value": "7000",
+              "label": "7 Sec"
+            },
+            {
+              "value": "8000",
+              "label": "8 Sec"
+            },
+            {
+              "value": "9000",
+              "label": "9 Sec"
+            },
+            {
+              "value": "10000",
+              "label": "10 Sec"
+            },
+            {
+              "value": "11000",
+              "label": "11 Sec"
+            },
+            {
+              "value": "12000",
+              "label": "12 Sec"
+            },
+            {
+              "value": "13000",
+              "label": "13 Sec"
+            },
+            {
+              "value": "14000",
+              "label": "14 Sec"
+            },
+            {
+              "value": "15000",
+              "label": "15 Sec"
+            }
+          ]
+        },
+        "name": "slideDelayTime"
+      }
+    ],
+    "description": "You can update the image, title description, CTA, and CTA url. Styles you can change the color of the button and the color of the font of the button. ",
+    "options": {
+      "html": "<div id=\"optimizely-extension-{{ extension.$instance }}\" class=\"slider-extention\">\n  \n  <div class=\"slider\">\n    <div class=\"slide\" style=\"background-image: url('{{extension.img1url}}');\">\n        <div class=\"info\">\n            <h2>{{extension.title1}}</h2>\n            <p>{{extension.DescritSlide1}}</p>\n            <a href=\"{{extension.Slide1CTAURL}}\" class=\"button-link\" style=\"background-color:{{extension.bgcolor}};color:{{extension.fontcolor}}\">{{extension.slide1CTA}}</a>\n        </div>\n    </div>\n    <div class=\"slide\" style=\"background-image: url('{{extension.image2Url}}');\">\n        <div class=\"info\">\n            <h2>{{extension.title2}}</h2>\n            <p>{{extension.DescritSlide2}}</p>\n            <a href=\"{{extension.slide2CTAURL}}\" class=\"button-link\" style=\"background-color:{{extension.bgcolor2}};color:{{extension.fontcolor2}}\">{{extension.Slide2CTA}}</a>\n        </div>\n    </div>\n    <div class=\"slide\" style=\"background-image: url('{{extension.image3URL}}');\">\n        <div class=\"info\">\n            <h2>{{extension.title3}}</h2>\n            <p>{{extension.DescritSlide3}}</p>\n            <a href=\"{{extension.slide3CTAURL}}\" class=\"button-link\" style=\"background-color:{{extension.bgcolor3}};color:{{extension.fontcolor3}}\">{{extension.slide3CTA}}</a>\n        </div>\n    </div>\n    <div class=\"slide\" style=\"background-image: url('{{extension.image4URL}}');\">\n        <div class=\"info\">\n            <h2>{{extension.title4}}</h2>\n            <p>{{extension.DescritSlide3}}</p>\n            <a href=\"{{extension.slide4CTAURL}}\" class=\"button-link\" style=\"background-color:{{extension.bgcolor4}};color:{{extension.fontcolor4}}\">{{extension.slide4CTA}}</a>\n        </div>\n    </div>\n</div>\n\n<button class=\"prev\">&#10094;</button>\n<button class=\"next\">&#10095;</button>\n  \n</div>\n",
+      "css": ".slider-extention {\n position: relative;\n  color: #555;\n  font-weight: bold;\n  text-align: center;\n  font-size: 20px;\n}\n\n/* Slider container */\n.slider {\n    position: relative;\n    width: 100%; /* Ensure the slider takes the full width of its parent */\n    overflow: hidden; /* Hide slides that overflow the width of the slider */\n}\n\n/* Individual slides */\n.slide {\n    display: none; /* Hide slides by default, will be shown via JavaScript */\n    width: 100%; /* Each slide takes full width of the slider */\n    height: 37rem; /* Fixed height for each slide */\n    /* height: 37.5rem; /* Alternative height in rems */\n    background-size: cover; /* Cover the slide area with the background image */\n    background-position: center; /* Center the background image */\n}\n\n/* Show the first slide by default */\n.slide:first-of-type {\n    display: block;\n}\n\n/* Info box within slides */\n.info {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    width: 40%;\n    height: 50%;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    background-color: rgba(240, 240, 240, 0.7);\n    padding: 10px;\n    border-radius: 10px;\n    color: black;\n    text-align: center;\n}\n\n/* Navigation buttons */\n.prev, .next {\n    cursor: pointer;\n    position: absolute;\n    top: 50%;\n    transform: translateY(-50%);\n    font-size: 24px;\n    color: white;\n    background-color: rgba(0,0,0,0.5);\n    border: none;\n}\n\n.prev {\n    left: 10px;\n}\n\n.next {\n    right: 10px;\n}\n\n.button-link {\n    display: inline-block;\n   background-color: #4CAF50;  Green background\n    color: white; /* White text */\n    padding: 14px 20px; /* Some padding */\n    border: none; /* No border */\n    cursor: pointer; /* Add a mouse pointer on hover */\n    text-align: center;\n    text-decoration: none; /* Remove underline from links */\n    font-size: 16px; /* Set a font size */\n}\n\n.button-link:hover {\n    background-color: #45a049; /* Darker green background on hover */\n}\n\n\n/* Responsive adjustments */\n@media (max-width: 768px) {\n    .info {\n        width: 150px; /* Smaller width on smaller screens */\n        padding: 5px;\n    }\n    .slide {\n        height: 400px; /* Adjust slide height for smaller screens */\n        /* height: 25rem; /* Alternative height in rems for smaller screens */\n    }\n}\n",
+      "apply_js": "/*\n * Editor now supports ES6 compliant code. Note that adding ES6\n * specific code to an experiment will break for users running\n * ES5-only browsers as code entered is not transpiled down to ES5.\n */\n\nconst utils = window.optimizely.get('utils');\nconst selector = extension.selector || 'body';\nconst insertType = extension.insert; // Ensure this is defined\nconst html = extension.$html; // Ensure this is defined\nconst slideDelayTime = extension.slideDelayTime; \nlet slideIndex = 0;\nlet slideInterval;\nlet isHovering = false;\n\nutils.waitForElement(selector).then(function (elem) {\n    elem.insertAdjacentHTML(insertType === 'before' ? 'beforebegin' : 'afterend', html);\n    const slideContainer = document.getElementById(\"optimizely-extension-\" + extension.$instance); // Adjust if needed based on your actual HTML structure\n    const slides = slideContainer.querySelectorAll(\".slide\");\n    const prevButton = slideContainer.querySelector('.prev');\n    const nextButton = slideContainer.querySelector('.next');\n\n    const showSlides = (isManual = false) => {\n        if (!slides.length) return; // Guard clause if no slides are found\n\n        // Only auto-increment slideIndex if not triggered by Prev/Next buttons\n        if (!isManual) {\n            slideIndex = (slideIndex + 1) % slides.length;\n        }\n\n        slides.forEach(slide => slide.style.display = \"none\");\n        slides[slideIndex].style.display = \"block\";\n        resetSlideTimer();\n    };\n\n    const resetSlideTimer = () => {\n        if (!isHovering) {\n            clearTimeout(slideInterval);\n            slideInterval = setTimeout(() => showSlides(), slideDelayTime); // Change image every 4 seconds\n        }\n    };\n\n    prevButton.addEventListener('click', () => {\n        slideIndex = slideIndex - 1 < 0 ? slides.length - 1 : slideIndex - 1;\n        showSlides(true); // Indicate manual navigation\n    });\n\n    nextButton.addEventListener('click', () => {\n        // Adjust for manual next navigation\n        slideIndex = (slideIndex + 1) % slides.length; // Ensure correct index before showing the slide\n        showSlides(true); // Indicate manual navigation\n    });\n\n    slideContainer.addEventListener('mouseenter', () => {\n        isHovering = true;\n        clearTimeout(slideInterval);\n    });\n\n    slideContainer.addEventListener('mouseleave', () => {\n        isHovering = false;\n        resetSlideTimer();\n    });\n\n    // Initialize the slideshow\n    showSlides();\n});\n\n\n",
+      "undo_js": "/*\n * Editor now supports ES6 compliant code. Note that adding ES6\n * specific code to an experiment will break for users running\n * ES5-only browsers as code entered is not transpiled down to ES5.\n */\n \n  const extensionElement = document.getElementById('optimizely-extension-' + extension.$instance);\n  if (extensionElement) {\n    extensionElement.parentElement.removeChild(extensionElement);\n  }\n\n"
+    }
+  }
