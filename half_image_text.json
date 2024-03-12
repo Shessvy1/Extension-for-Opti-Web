@@ -1,0 +1,92 @@
+{
+  "plugin_type": "widget",
+  "name": "Half Image, Half title description and CTA ",
+  "edit_page_url": "https://etail_fashiondemo.optimdemos.com/",
+  "form_schema": [
+    {
+      "default_value": "1",
+      "name": "imgSide",
+      "field_type": "toggle",
+      "options": {
+        "choices": [
+          {
+            "value": "1",
+            "label": "image to the right"
+          },
+          {
+            "value": "2",
+            "label": "image to the left"
+          }
+        ]
+      },
+      "label": "Image side Right or left? "
+    },
+    {
+      "default_value": "#heroBlock-175",
+      "name": "selector",
+      "field_type": "selector",
+      "options": null,
+      "label": "Placement of card"
+    },
+    {
+      "default_value": "after",
+      "name": "insert",
+      "field_type": "toggle",
+      "options": {
+        "choices": [
+          {
+            "value": "before",
+            "label": "Before"
+          },
+          {
+            "value": "after",
+            "label": "After"
+          }
+        ]
+      },
+      "label": "Placement Of Card"
+    },
+    {
+      "default_value": "https://images1.cmp.optimizely.com/assets/1_image.webp/Zz1hMmQ4ZmNhOGRkYmIxMWVlODJmMmNlOTkyMzIwMjc2OA==",
+      "name": "urlImage_opti",
+      "field_type": "text",
+      "options": null,
+      "label": "Image URL"
+    },
+    {
+      "default_value": "The Futire of Fashion! ",
+      "name": "12Title",
+      "field_type": "text",
+      "options": null,
+      "label": "Title"
+    },
+    {
+      "default_value": "Description goes here. More details about the call to action.",
+      "name": "12descipt",
+      "field_type": "text",
+      "options": null,
+      "label": "Descriptoin"
+    },
+    {
+      "default_value": "Future Starts Here",
+      "name": "ctaText1",
+      "field_type": "text",
+      "options": null,
+      "label": "CTA Text"
+    },
+    {
+      "default_value": "#",
+      "name": "ctaurl2",
+      "field_type": "text",
+      "options": null,
+      "label": "CTA URL"
+    }
+  ],
+  "description": "You can pick and image, a title, a description, and cta and link, fully responsive and adaptive. description will disappear on mobile. ",
+  "options": {
+    "html": "<div id=\"optimizely-extension-{{ extension.$instance }}\" class=\"hero-image-and-cta-\">\n <div class=\"opti-container\">\n  <!-- Text Block (Title, Description, Button) -->\n  <div  class=\"cardCo\" style=\"flex: 2; order: {{ extension.imgSide }};\";>\n    <h2>{{ extension.12Title }}</h2>\n    <p>{{ extension.12descipt }}</p>\n    <a class=\"shOptiBtn\" href=\"{{ extension.ctaurl2 }}\">{{ extension.ctaText1 }}</a>\n  </div>\n\n  <!-- Image -->\n  <div class=\"cardimg1\" style=\"flex: 2; order: 1;\">\n    <img src=\"{{extension.urlImage_opti}}\" style=\"width: 100%; height: auto;\" alt=\"Description\" class=\"opti-image23\">\n  </div>\n</div>\n\n</div>",
+    "css": ".opti-container{\ndisplay: flex; \nwidth: 100%;\n}\n\n.hero-image-and-cta- {\n  background-color: #ffffff;\n  border-bottom: 1px solid #e0d769;\n  color: #555;\n  padding: 0px;\n  font-weight: bold;\n  text-align: center;\n  font-size: 20px;\n}\n/*button CTA*/\n.shOptiBtn{\n  display: inline-block; \n  padding: 10px; \n  background-color: #007bff; \n  color: white; \n  text-decoration: none; \n  border-radius: 5px; \n}\n\n/* External CSS file to center .cardCo content */\n.cardCo {\n  display: flex; /* Use flexbox for layout */\n  flex-direction: column; /* Stack items vertically */\n  justify-content: center; /* Center items vertically in the container */\n  align-items: center; /* Center items horizontally in the container */\n  text-align: center; /* Center the text inside the .cardCo div */\n  height: 100%; /* Ensure .cardCo takes full height of its parent to center content effectively */\n    position: relative;\n  top: 50%;\n  transform: translateY(70%);\n}\n\n@media (max-width: 768px) {\n  .opti-container {\n    flex-direction: column !important; /* Stacks the child elements vertically */\n  }\n\n  .cardCo, .cardimg1 {\n    flex: 0 0 100% !important; /* Each child takes full width of the container */\n    order: 2 !important; /* Initially set content to appear below image */\n  }\n\n  .cardCo {\n    order: 3 !important; /* Ensures content is below the image */\n    transform: translateY(0%) !important; /* Resets the vertical positioning */\n    position: static !important; /* Resets to default positioning */\n    height: auto !important; /* Allows the container to resize based on its content */\n  }\n\n  .cardimg1 {\n    order: 1 !important; /* Ensures image is placed at the top */\n    margin-bottom: 35px;\n  }\n\n  .opti-image23 {\n    width: 100% !important; /* Ensures the image takes full width of its container */\n    height: auto !important; /* Maintains the aspect ratio of the image */\n  }\n  \n  .shOptiBtn {\n    margin-top: 20px !important; /* Adds spacing above the button for better visual separation */\n    margin-bottom: 35px;\n  }\n}\n",
+    "apply_js": "/*\n * Editor now supports ES6 compliant code. Note that adding ES6\n * specific code to an experiment will break for users running\n * ES5-only browsers as code entered is not transpiled down to ES5.\n */\n\n  const utils = window.optimizely.get('utils');\n  const selector = extension.selector || 'body';\n  const insertType = extension.insert; // this account for the variable if you wil insert before or after the class or ID you selected\n  const html = extension.$html; // bring in the html from the html tab as this editor does not have account for the other files\n\n  utils.waitForElement(selector)\n  .then(function(elem) {\n    // Prepend the extension html to the body\n   elem.insertAdjacentHTML(insertType === 'before' ? 'beforebegin' : 'afterend', html);\n    const slideContainer = document.getElementById(\"optimizely-extension-\" + extension.$instance);\n  });\n \n",
+    "undo_js": "/*\n * Editor now supports ES6 compliant code. Note that adding ES6\n * specific code to an experiment will break for users running\n * ES5-only browsers as code entered is not transpiled down to ES5.\n */\n \n  const extensionElement = document.getElementById('optimizely-extension-' + extension.$instance);\n  if (extensionElement) {\n    extensionElement.parentElement.removeChild(extensionElement);\n  }\n"
+  }
+}
